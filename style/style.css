@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Francois+One&display=swap');
+body{
+    color: aliceblue;
+    font-family: 'Francois One', sans-serif;
+    font-weight: normal;
+    margin: 0;
+}
+#header{
+    position:relative;
+}
+.admin_button{
+    position:absolute;
+    right:1rem;
+    top:1rem;
+}
+a{
+    text-decoration: none;
+    color: aliceblue;
+    cursor: pointer;
+}
+a:hover{
+    color:#E60D04;
+    font-size: 20px;
+    transition: font-size ease-in-out .2s;
+    transform: translateZ(0);
+    will-change: transform;
+}
+.bg{
+    background-image: url('../images/ac-logo_smoke.jpg');
+    background-position: bottom;
+    padding: 1px;
+    margin: 0;
+    padding-bottom: 15px;
+}
+#site-name{
+    text-align: center;
+    font-size: 1.5em;
+    text-transform: uppercase;
+}
+#site-name a{
+    text-decoration: none;
+    color: aliceblue;
+}
+.slideshow-container{
+    max-width: 100%;
+    width: 100%;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.slideshow-box{
+    display: flex;
+    height: 100%;
+    width: 400%;
+    justify-content: space-between;
+    animation: imgBox 15s linear infinite alternate;
+    cursor: pointer;
+}
+@keyframes imgBox{
+    0%{
+      margin-left: 0;
+    }
+    100%{
+      margin-left: -50%;
+    }
+}
+.slideshow-box:hover{
+    animation-play-state: paused;
+}
+.slideshow-box .slideshow-image{
+    width: calc(100% - 100px);
+    height: 100%;
+}
+.slideshow-box img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}  
+.slogan{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.5em;
+}
+.input-container{
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0 auto;
+    max-width: 800px;
+    text-align: center;
+    justify-content: space-evenly;
+}
+#btn{
+    margin: 0 auto;
+    max-width: 100%;
+    text-align: center;
+    margin-top: 40px;
+    cursor: pointer;
+}

@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Francois+One&display=swap');
+html{
+    background-color: black;
+}
+body{
+    color: aliceblue;
+    font-family: 'Francois One', sans-serif;
+    font-weight: normal;
+    margin: 0;
+}
+h1{
+    text-align: center;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    margin:1em;
+    
+}
+.ranking{
+    margin:1em;
+    border: 5px solid white;
+    flex-basis: 50%;
+}
+.ranking__Container{
+    display: flex;
+    flex-direction: column;
+    gap:1em;
+    
+}
+.ranking__Container_game{
+    margin:1em;
+    border: 2px dashed white;
+    background-image: url('../images/ac-logo_smoke.jpg');
+    background-position: bottom;
+}
+
+.recommendation{
+    margin:1em;
+    border: 5px solid white;
+    flex-basis: 50%;
+}
+.recommendation__Container{
+    display: flex;
+    flex-direction: column;
+    gap:1em;
+    
+}
+.recommendation__Container_game{
+    margin:1em;
+    border: 2px dashed white;
+    background-image: url('../images/ac-logo_smoke.jpg');
+    background-position: bottom;
+}
